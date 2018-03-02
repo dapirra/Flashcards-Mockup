@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>FlashCards MVP</title>
+
+	<meta charset="utf-8">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="jquery.maphighlight.js"></script><!--http://davidlynch.org/projects/maphilight/jquery.maphilight.js-->
+	<script src="script.js"></script>
+
+	<style>
+	</style>
+</head>
+<body>
+	<!--<div>
+		<div style="display: inline-block">
+			<img src="main.png" width="75" />
+			<div>activity_main.xml</div>
+			<div>MainActivity.java</div>
+		</div>
+		<div style="display: inline-block">
+			<img src="main.png" width="75" />
+			<div>activity_main.xml</div>
+			<div>MainActivity.java</div>
+		</div>
+	</div>-->
+	<h1><span id="xmlName"></span> | <span id="javaName"></span></h1>
+	<div id="imageArea"></div>
+	<div id="textArea"></div>
+	<div style="margin-top: 20px"><button onclick="hotSpotButton()">Toggle Hotspots</button></div>
+	<div>
+		<h2>Activities:</h2>
+		<ol>
+			<li><a href="#" onclick="changeTo('main')">Main</a></li>
+			<li><a href="#" onclick="changeTo('decks')">Decks</a></li>
+			<li><a href="#" onclick="changeTo('card')">Card</a></li>
+			<li><a href="#" onclick="changeTo('card-edit')">Card Edit</a></li>
+			<li><a href="#" onclick="changeTo('settings')">Settings</a></li>
+			<li><a href="#" onclick="changeTo('about')">About</a></li>
+			<li><a href="#" onclick="changeTo('theme')">Theme</a></li>
+		</ol>
+	</div>
+</body>
+</html>
